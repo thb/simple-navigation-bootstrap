@@ -56,7 +56,7 @@ module SimpleNavigation
             item_options[:link][:class] << 'dropdown-toggle'
             item_options[:link][:'data-toggle'] = 'dropdown'
             item_options[:link][:'data-target'] = '#'
-            link << content_tag(:b, '', :class => 'caret')
+            link << content_tag(:i, '', :class => 'icon-chevron-down')
           end
           item.html_options = item_options
         end
