@@ -18,7 +18,7 @@ module SimpleNavigation
               li_options[:id] = nil
               li_content = tag_for(item)
             end
-            item.sub_navigation.dom_class = [item.sub_navigation.dom_class, 'dropdown-menu', split ? 'pull-right' : nil].flatten.compact.join(' ')
+            item.sub_navigation.dom_class = [item.sub_navigation.dom_class, 'submenu', split ? 'pull-right' : nil].flatten.compact.join(' ')
             li_content << render_sub_navigation_for(item)
             li_options[:class] = [li_options[:class], 'dropdown', split ? 'dropdown-split-right' : nil].flatten.compact.join(' ')
           end
